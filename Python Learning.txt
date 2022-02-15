@@ -1,0 +1,1006 @@
+2**3 means 2 raise to 3 = 8
+10%3 means modulus, get the ramainder part when dividing which is 1 here
+for String data type use single or double quote ex. "Guido van Russom"
+print() is a built-in function ex print("kolye") or print('monte') or print("Bert's Laptop") or print("\"The Laptop\"") or print('"The Laptop"') or print("The Laptop\'s \"battery\"")
+to concatenate "pay"+"pay"
+print Python 10 times: 10 * "Pycharm IDE--"
+
+\n means new line print("c:\docs\ninja") will result below     
+c:\docs
+inja 
+
+print raw String using print(r"c:\docs\ninja")
+=======================================================================================================================
+
+Variables:
+variable sample: x=2, when you type on the next line x+3 it will give 5. Or y=3
+id(x) willget the addressof the x variable. a=x then a will have the same address as x.
+id(2) will have the address of x and a all the same value.
+if a value looses its variable or container it will become "Garbage" for garbage collection concept in Python, this value is still in memory.
+type(x) to get what type of data is in x variable
+a=3.5
+b=int(a) then b will get 3 as integer. b=3 without the decimal part
+c=float(b) converts b to float using c variable
+d=complex(a,b) this will result in 3.5 + 3j. Complex data type means having imaginary number like i or j in Python.
+
+boolean type:
+b<a then pressenter
+True
+b>a
+False
+
+result = a>b
+type(result)
+<class 'bool'>
+result
+True
+
+int(True) is eqaul to 1 and int(Frue) is eqaul to 0
+
+type (nums)
+<class 'list'>
+
+type(tup)
+<class 'tuple'>
+
+type (name)
+<class 'str'>
+
+range(10)
+range(0, 10)
+
+list(range(10)) converts 10 to a list
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+list(range(1,10,2))
+[1, 3, 5, 7, 9]
+
+type(range(10))
+<class 'range'>
+
+use underscore(_) to get the output of the previous operation ex. _ + y
+
+for string variable: name = "YouTube". To get the first character use name[0]. TO get the character starting from right use name[-1] or name[-2]
+to print a character followed by other character(s) from a string variable use name[1:4] will give "out" result from the word Youtube. 
+name[1:] will result in printing the rest of the characters starting from 1
+name[:3] will result in printing the 3rd letter then going to the left printing the rest of the characters
+toget the how many characters are there in a string use: len(name)
+
+
+=======================================================================================================================
+
+LIST:
+nums = [12,13,56,100]: Note always starts with 0 this means nums[0] has a value of 12
+nums will result in printing [12, 13, 56, 100]
+nums[1] will result in displaying 13 
+nums[2:] willprint [56, 100] just like in variables
+for String pangalan=["ako","ikaw","sina"]
+pangalan[0] will display "ako" just like in variables
+we can mix datat type in Python "list" unlike in java or c++ list: character=[9.2, "kol", 4]
+
+we can group a list ex listgroup=[nums,pangalan]
+put a dot(.) on the right side of the list and you will get other built-in function ex. nums.
+nums.append(50) will add 50 to the end of the list
+nums.insert(2,77) will add 77 on 3rd position from left
+nums.remove(77) will remove 77 value on the nums list
+nums.pop(1) will remove the 2nd value from nums list
+nums.pop() will remove the last value from nums list
+del nums[2:] will remove the 3rd position up to the right end of the list
+nums.extend([1,2,3,4]) adds multiple values 
+min(nums) will get min value from nums list
+max(nums) will get maximum value from nums list
+sum(nums)
+nums.sort() sort in ascending order
+
+
+Dictionary instead of index number to get values using keys, all key should be unique though
+age={"ako":42,"ikaw":10,"sila":20}
+
+age
+{'ako': 42, 'ikaw': 10, 'sila': 20}
+
+age.keys()
+dict_keys(['ako', 'ikaw', 'sila'])
+
+age.values()
+dict_values([42, 10, 20])
+
+age["ako"]
+42
+
+age.get("ikaw")
+10
+
+=======================================================================================================================
+
+TUPLE | SET:
+TUPLE is just like list but immutable (can't change value) but much faster than list
+tup = (1,2,3,4,5,6,7,)
+
+set isa collection of unique elements: indexing is not supported like s[2] but it removes any duplicate values and retain only one of that value (does not support duplicate values).
+s={10,20,30,40,50,60}
+
+Set path in windows for Python: right on myPC windows explorer empty space then properties. add system variables for Python program foder under appdata local and the scripts folder for python
+help in Python: help() then type topics OR type quit command to get back
+
+sublime optional text editor
+=======================================================================================================================
+
+OPERATORS:
+3+2 arithmetic operator
+x= x+2 = x+= 2 
+x*= 3
+a,b=5,6  an assignment operator
+n=7 an assignment operator
+n=-n = -7 unary operator
+a>b relational operator
+a==b is a relational operator
+a>=b is a relational operator
+a!=b is a relational operator
+
+logical operator:
+a>5 and b<3
+a>5 or b<3
+
+------------------
+x=True then press enter
+x
+True
+
+not x
+True
+
+x=not x
+x
+False
+------------------
+
+Number System Conversion:
+bin(3) converts decimal 3 to binary system
+'0b11'
+
+0b11 converts binary to decimal 3 to binary system
+3
+
+oct(3) converts decimal to octal system
+'0o3'
+
+0o12 converts Octal to decimal system
+10
+
+hex(25) converts decimal to hexadecimal
+'0x19'
+
+0x19 converts hexadecimal to decimal
+25
+------------------
+
+Complements Operator:
+~12 complement of 12 is -13. 12 in binary is 00001100 and its 1s(one's) complement is 11110011. 2s(two's) complement = 1s complement + 1 in binary format, which is the negative equivalent of a binary number.
+-13
+------------------
+
+Bitwise Operator:
+12&13 bitwise "AND" operator. 00001100 and 00001101 = 12
+12
+
+12|13 bitwise "OR" operator. 00001100 and 00001101 = 12
+13
+------------------
+
+XOR operator: When you have odd numbers of 1 the result is 1.
+
+12^13
+1
+------------------
+
+Left shift operator:
+
+10<<2 in binary 1010 add two (2)more zero to the right 101000.
+40
+
+Right shift operator:
+
+10>>2 in binary 1010 remove two (2) bits from the left 10.
+2
+=======================================================================================================================
+
+MATH AND USER INPUT:
+
+Import Math Function:
+import math use built-in complexmath function
+x=math.sqrt(25) gets quare root
+x
+5.0
+
+import math
+print(math.floor(2.9)) gets the whole number only without rounding off
+2
+
+print(math.ceil(2.01)) gets the whole number + 1 if there is decimal a decimal part
+3
+
+print(math.pow(2,3)) gets power like 2 raise to the 3rd power here    
+8.0
+
+print(math.pi)      
+3.141592653589793
+
+import math as m #m as alias for speedy coding
+m.sqrt(9)      
+3.0
+
+from math import sqrt, pow #Use only sqrt and pow function
+pow(2,4)
+16.0
+------------------
+
+Working with PyCharm | Run | Debug | Trace | py file:
+"save as" your codes and open using IDLE or via command prompt go to the location of the file then type python then space then the filename
+
+Working with PyCharm | Run | Debug | Trace | py file:
+
+User Input | Command Line: Sample code below.
+x=input("Enter value of x: ")
+a=int(x)
+y=input("Enter value of y: ")
+b=int(y)
+z=a+b
+print("the sum of x and y is: " + str(z))
+print("\n")
+
+x=int(input("Enter value of c: "))
+y=int(input("Enter value of d: "))
+z=x+y
+print("the sum of x and y is: " + str(z))
+------------------
+
+char=input("Enter a character: ") 
+print(char[0]) #to print single character
+
+char=eval(input("expression: ")) # evaluate an inputted arithmetic operation (no need to assign data type)
+print(char)
+------------------
+
+to accept input fromcommand prompt use argv import sys first. python <your python filename> <first input> <second input>. ex C:\Users\134577PH1\Desktop>python test.py 5 9 results in 14
+import sys
+x=int(sys.argv[1])
+y=int(sys.argv[2])
+z=x+y
+print("the sum of x and y is: " + str(z))
+------------------
+
+=======================================================================================================================
+
+CONDITIONAL AND LOOPS:
+
+If Elif Else Statement: should have the same indentation for each if statements accordingly
+
+x = int(input("Enter a whole number: "))
+modulo = x % 2
+
+if modulo == 0:
+    print("You entered an \"EVEN\" number")
+if modulo == 1:
+    print("You entered an \"ODD\" number")
+print("Bye.")
+------------------
+
+The code below is much faster:
+x = int(input("Enter a whole number: "))
+modulo = x % 2
+
+if modulo == 0:
+    print("You entered an \"EVEN\" number")
+else:
+    print("You entered an \"ODD\" number")
+print("Bye.")
+------------------
+
+If inside an if
+x = int(input("Enter a whole number: "))
+modulo = x % 2
+
+if modulo == 0:
+    print("You entered an \"EVEN\" number")
+    if x > 10:
+        print("The entered number is greater than 10")
+    else:
+        print("The entered number is less than than or equal to 10")
+else:
+    print("You entered an \"ODD\" number")
+print("Bye.")
+------------------
+
+elif sample
+x = int(input("Enter a whole number: "))
+
+if x == 1:
+        print("One")
+elif x==2:
+        print("Two")
+elif x==3:
+        print("Three")
+print("Bye.")
+------------------
+
+While Loops:
+
+x = int(input("Enter a whole number: "))
+
+while x<10:
+    print("Still less than 10. ", end="") #end="" means don't print the next print command in new line
+    x = int(input("Enter a whole number: "))
+print("Bye.")
+------------------
+
+For Loop:
+
+x=["Kolyetas","pare", "kawn"]
+for i in x:
+	print(i)
+
+results:
+Kolyetas
+pare
+kawn
+
+another sample below:
+x="ERAP"
+for i in x:
+	print(i)
+	
+Results:
+E
+R
+A
+P
+
+another samples below:
+for i in range(10):
+	print(i)
+	
+for i in range(5,10,2): #5 is the start position, 10 is the end, 2 is increment
+	print(i)
+	
+for i in range(20,0,-5):  #20 is the start position, 0 is the end position, -5 is decrement
+	print(i)
+	
+x = int(input("Enter a whole number: "))
+for i in range(x):
+	print(i)
+
+------------------
+
+Break Continue Pass:
+
+simply use the "break" command ex. to go out of while loop
+simply use continue 
+
+sample of continue below:
+for i in range(1,13):
+	if i%3 == 0:
+		continue #skips any value of i which is divisible by 3
+	print(i)
+print ("bye")
+
+use "pass" if the "if" condition does not have a body or to an empty(function) def fun():
+------------------
+
+For Else:
+
+nums=[12,15,18,21,26]
+for i in nums:
+	if i % 5 == 0:
+		print(i)
+
+=======================================================================================================================
+
+ARRAYS AND NUMPY:
+
+Array: Should have all values of the same type
+
+#import array as arr or from array import *
+from array import *
+
+vals = array('i',[1,2,3,4,5,6]) #"i" stands for integer
+print(vals)
+print(vals.buffer_info())
+
+Accepting array values from User in Python Search in Array:
+
+Why Numpy? Installing Numpy in Pycharm: # Use for multidimensional array like cube or matrix.You need to install Numpy. Fornumpy no need to comment the type of data.
+install numpy for IDLE: at cmd type <pip3 install numpy>. Install the latest update of pip at cmd <python.exe -m pip install --upgrade pip>
+How to install numpy for pycharm IDE: File>setting>project: python learning>python interpreter> click + icon,search for numpy and install the numpy package.
+
+Ways of Creating Array:
+array()
+linspace()
+logspace()
+arrange()
+zeros()
+ones()
+
+Copying an Array:
+Shallow copy arr2=arr1.view) and deep copy (arr2-arr1.copy)
+
+Working With Matrix:
+
+=======================================================================================================================
+
+#FUNCTIONS:
+def greet():
+    print('Hello')
+    print('Good Day')
+
+def add_sub(x,y):
+    c=x+y
+    d=x*y
+    return c, d
+
+#Resuts below
+greet() #Call a funtion in Python
+result1, result2 = add_sub(2,3)
+
+print(result1, result2)
+-----------------------------------------
+
+Functions Arguments:
+Type of Arguments:
+Keyworded Variable Length Arguments in Python:
+Global Keyword: global x
+Pass List to a Function: 
+Fibonacci Sequence:
+Factorial:
+Recursion: a function calling itself will result to infinite loop, max loop is 1000 times. To increase the limit ,<print(sys.setrecursionlimit(2000)>. <print(sys.getrecursionlimit(0)>.
+Factorial Using Recursion:
+Anonymous Functions | Lambda: f= lambda a: a*a to find square of a number (function without name).accepts only 1 expression.
+f= lambda a,b: a+b 
+result = f(5,4)
+print(result)
+----------------------------------
+
+Filter Map Reduce:
+def is_even(n):
+	return n%2 == 0
+
+nums = [1,2,3,4,5,6,7,8,9,10]
+evens=list(filter(is_even, nums))
+
+print(evens)
+----------------------------------
+nums = [1,2,3,4,5,6,7,8,9,10]
+evens=list(filter(lambda n: n%2==0, nums))
+
+print(evens)
+----------------------------------
+def update(n):
+    return n*2
+
+nums = [1,2,3,4,5,6,7,8,9,10]
+evens=list(filter(lambda n: n%2==0, nums))
+doubles = list(map(update,evens))
+print(evens)
+print(doubles)
+----------------------------------
+nums = [1,2,3,4,5,6,7,8,9,10]
+evens=list(filter(lambda n: n%2==0, nums))
+doubles = list(map(lambda n: n*2,evens))
+print(evens)
+print(doubles)
+----------------------------------
+from functools import reduce
+def add_all(a,b):
+    return a+b
+
+nums = [1,2,3,4,5,6,7,8,9,10]
+evens=list(filter(lambda n: n%2==0, nums))
+doubles = list(map(lambda n: n*2,evens))
+
+sum=reduce(add_all,doubles)
+
+print(evens)
+print(doubles)
+print(sum)
+----------------------------------
+from functools import reduce
+nums = [1,2,3,4,5,6,7,8,9,10]
+evens=list(filter(lambda n: n%2==0, nums))
+doubles = list(map(lambda n: n*2,evens))
+
+sum=reduce(lambda a,b: a+b,doubles)
+
+print(evens)
+print(doubles)
+print(sum)
+----------------------------------
+
+Decorators: Changing the beheviour of a function using a separate function
+#Switch a and b values:
+def div(a, b):
+    print(a / b)
+def smart_div(func):
+    def inner(a, b):
+        if a < b:
+            a, b = b, a
+        return func(a, b)
+    return inner
+div = smart_div(div)
+div(2, 4)
+
+=======================================================================================================================
+
+MODULES:
+Calc_Module below:
+def add(a,b):
+   return a+b
+
+def sub(a,b):
+   return a-b
+
+def mul(a,b):
+   return a*b
+
+def div(a,b):
+   return a/b
+-------------------------
+Use Calc_Module below:
+from Calc_Module import *
+a=2
+b=3
+c=add(a,b)
+print('the sum of the two numbers is: ' + str(c))
+c=mul(a,b)
+print('the product of the two numbers is: ' + str(c))
+-------------------------
+
+Special Variable __name__:
+print (__name__) # the resultis __main__
+#if you import the calc_module
+-------------------------
+
+Special Variable __name__ 2:
+=======================================================================================================================
+
+OOPs CONCEPTS: "Object Oriented Programming". Python is also "Functional Programming".
+Class and Object:
+class Computer:
+
+    def config(self): #Method in Computer class. Function
+        print('i5,16gb,1TB')
+
+    def config2(self): #Method in Computer class
+        print('Android Z,8gb,2TB')
+
+x=9 #objectof Computer . x is an attribute
+print(type(x))
+a='8'
+com1=Computer() #Object in Computer class
+com2=Computer() #Object in Computer class
+print(type(com1))
+print()
+print("Calling a method in class below:")
+
+#To call class use below:
+Computer.config(com1)
+Computer.config2(com2)
+
+com1.config() #another way to call methods or function from a Class
+com2.config2()
+
+RESULTS:
+<class 'int'>
+<class '__main__.Computer'>
+
+Calling a method in class below:
+i5,16gb,1TB
+Android Z,8gb,2TB
+result again using com1.config()
+i5,16gb,1TB
+Android Z,8gb,2TB
+
+Process finished with exit code 0
+-------------------------
+
+ __init__ method: #special method
+ 
+class Computer: # A Complete system, finished product
+        def __init__(self): #special method in a Class that automatically executes
+        print(in initialization init)
+
+    def config(self): #Method in Computer class
+        print('i5,16gb,1TB')
+
+    def config2(self): #Method in Computer class
+        print('Android Z,8gb,2TB')
+
+com1=Computer() #Object in Computer class.Calling __init__ two times because of com1 and com2 object creation
+com2=Computer() #Object in Computer class
+
+print("Calling a method in class below:")
+#To call class use below:
+Computer.config(com1)
+Computer.config2(com2)
+print()
+
+print("call again using com1.config()")
+com1.config()
+com2.config2()
+------------------------------
+__init__:
+
+class Computer:  # A Complete system, finished product. "A Design"
+    def __init__(self, cpu, ram):  #A Constructor. Special method in a Class that automatically executes
+        self.cpu = cpu
+        self.ram = ram
+
+    def config(self):  # Method in Computer class
+        print('Config is: CPU=', self.cpu, ',RAM=', self.ram)
+
+
+com1 = Computer('i5', 16)  # Object in Computer class.Calling __init__ two times because of com1 and com2 object creation
+com2 = Computer('ryzen5', 8)  # Object in Computer class
+
+print('Com1:')
+com1.config()
+print()
+
+print('Com2:')
+com2.config()
+------------------------------
+
+Constructor, Self and Comparing Objects:
+class Computer:  # A Design
+   pass
+
+com1 = Computer()  # Object in Computer class.Calling __init__ two times because of com1 and com2 object creation
+com2 = Computer() #Create object, have different memory address.
+
+print(id(com1))
+print(id(com2))
+------------------------------
+
+class Computer:  # A Design
+   def __init__(self):
+       self.name='Navin'
+       self.age=28
+
+com1 = Computer()  # Object in Computer class.Calling __init__ two times because of com1 and com2 object creation
+com2 = Computer() #Create object, have different memory address.
+
+com2.name='ikaw'
+print(com1.name)
+print(com2.name)
+------------------------------
+
+class Computer:  # A Design
+   def __init__(self):
+       self.name='Navin'
+       self.age=28
+
+   def update(self):
+        self.age = 30
+
+com1 = Computer()  # Object in Computer class.Calling __init__ two times because of com1 and com2 object creation
+com2 = Computer() #Create object, have different memory address.
+
+com2.name='ikaw'
+
+print(com2.age)
+
+com2.update()
+print(com1.name)
+print(com2.age)
+------------------------------
+
+class Computer:  # A Design
+   def __init__(self):
+       self.name='Navin'
+       self.age=28
+
+   def update(self):
+        self.age = 30
+
+   def compare(self, other):
+        if self.age == other.age:
+            return True
+        else:
+            return False
+
+com1 = Computer()  # Object in Computer class.Calling __init__ two times because of com1 and com2 object creation
+com2 = Computer() #Create object, have different memory address.
+
+print("Com1 Age", com1.age)
+#com2.update()
+print("Com2 Age", com2.age)
+
+if com1.compare(com2)==True:
+    print("same age")
+else:
+    print("different age")
+------------------------------
+
+Types of Variables:
+class Car:
+    #Namespace is an area where you create and store object/variable.
+    #Object/Instance Namespace
+    wheels=4 #A class variable. A Class namespace
+
+    def __init__(self):
+        self.odo = 21000 #Called instance variable. It has a default value of 21000 but can be change.
+        self.maker = 'BMW' #An intance namespace. An instance variable.
+
+car1=Car()
+car2=Car()
+print(car1.maker, 'car1 odo',car1.odo, car1.wheels)
+car2.odo=39000
+print(car1.maker,'car2 odo',car2.odo, car1.wheels)
+
+Car.wheels=6
+print(car1.maker, 'car1 odo',car1.odo, car1.wheels)
+print(car1.maker,'car2 odo',car2.odo, car1.wheels)
+------------------------------
+
+Types of Method:
+def get(self): #Getters/Accessors method
+	return(self.m1)
+	
+def set(self,value): #Setters.mutators method
+	return self.m1=value
+------------------------------
+
+Types of Method:
+class student:
+    school = 'Telusco'
+
+    @classmethod
+    def info(cls):  #A class Method
+        return cls.school
+
+    @staticmethod #A decorator
+    def static_method():
+        print('Punyal!')
+
+print(student.info())
+student.static_method()
+------------------------------
+
+Inner Class:
+class student:
+    school = 'Telusco'
+
+    def __init__(self, name, year):
+        self.name=name
+        self.year=year
+        self.lap=self.laptop()
+
+    def show(self):
+        print(self.name, self.year)
+        self.lap.show()
+
+    class laptop():
+        def __init__(self):
+            self.brand='Lenovo'
+            self.cpu='i7'
+            self.ram='16gb'
+
+        def show(self):
+            print(self.brand,self.cpu,self.ram)
+
+s1=student('ako',11)
+print ('Result XXX')
+s1.lap.ram=8
+s1.show()
+print()
+
+print ('Result A')
+s1.lap.cpu='ryzen'
+s1.lap.brand='Acer'
+s1.lap.show()
+print()
+
+print ('Result B')
+lap1=student.laptop()
+lap1.show()
+------------------------------
+
+Inheritance:
+class A:
+    def feature1(self):
+        print('f1 working')
+
+    def feature2(self):
+        print('f2 working')
+
+class B(A): #Let B class a Child Class of A class. Inherit all methods of A class
+    def feature3(self):
+        print('f3 working')
+
+    def feature4(self):
+        print('f4 working')
+
+class C(B): #Multiple level inheritance.
+    def feature5(self):
+        print('f5 working')
+
+class D: #Separate Class
+    def feature6(self):
+        print('f6 working')
+
+class E(A,D): #Will inherit Class A and D
+    def feature7(self):
+        print('f7 working')
+
+
+a1=A()
+a1.feature1()
+a1.feature2()
+
+b1=B()
+print()
+b1.feature1()
+b1.feature4()
+
+e1=E()
+e1.feature6()
+------------------------------
+
+Constructor in Inheritance: MRO(Method resolution order) rules
+class A:
+    def __init__(self):
+        print('init A')
+
+    def feature1(self):
+        print('f1 working')
+
+    def feature2(self):
+        print('f2 working')
+
+class B(A): #Let B class a Child Class of A class. Inherit all methods of A class
+    def __init__(self):
+        super().__init__() #Calling the Super Class A init
+        print('init B') #Without init B init A will be executed.
+
+    def feature3(self):
+        print('f3 working')
+
+    def feature4(self):
+        print('f4 working')
+
+b1=B()
+
+b1.feature3()
+------------------------------
+Introduction to Polymorphism:
+Duck Typing:
+------------------------------
+Operators Overloading:
+a=2
+b=4
+print(int.__add__(a,b))
+------------------------------
+Method Overloading:
+def sum(a=none, b=none,c=none)
+s=a+b+c
+print(a1.sum(2,3))
+------------------------------
+Method Overriding: Just inheritance of a sub class
+------------------------------
+Iterators:
+nums=[1,2,3,4,5,]
+it= iter(nums)
+print(it.__next__())#will give 1
+print(it.__next__())#will give 2
+print(next(it))#will give 3
+------------------------------
+Generators:
+def topten():
+    n=1
+    while n <= 10:
+     sq=n*n
+     yield sq
+     n+=1
+
+values = topten()
+
+for i in values:
+    print(i)
+------------------------------
+Exception Handling:
+A=5
+B=0
+
+try:
+    print(A/B)
+    k = int(input("enter a number: "))
+    print(k)
+
+except ZeroDivisionError as e:
+	print('ERROR!:denominator is 0..', e)
+
+except ValueError as e:
+	print('Invalid Input', e)
+
+except Exception as e:
+	print('Something went wrong..', e)
+
+finally:
+    print('Bye')
+=======================================================================================================================
+
+MISCELLANEOUS:
+MultiThreading:
+from time import sleep #Just to check the run time if it prints hello and hi simultaneously.
+from threading import *
+
+class Hello(Thread):
+    def run(self):
+        for i in range(5):
+            print('Hello',i)
+            sleep(1)
+
+class Hi(Thread):
+    def run(self):
+        for i in range(5):
+            print('Hi',i)
+            sleep(1)
+t1=Hello()
+t2=Hi()
+t1.start()
+sleep(0.2)
+t2.start()
+
+t1.join() #Wait to finish before printing "Bye"
+t2.join()
+print('Bye')
+------------------------------
+File handling:
+f=open("MyData.txt", 'r') #r means read
+print(f.read())
+------------------------------
+f=open("MyData.txt", 'r') #r means read
+print(f.readline(),end="") #Read1st line without new line
+print(f.readline()) #Read next line
+------------------------------
+f1=open("abc", 'w') #w means write
+f1.write('Something')
+f1.write(' People')
+------------------------------
+f1=open("abc", 'a') #a means append
+f1.write('laptop')
+------------------------------
+f=open("MyData.txt", 'r') #r means read
+f1=open("abc", 'w') #w means write
+
+for data in f: #Copy data from MyData to abc
+    f1.write(data)
+------------------------------
+f=open("Resetting_PC.jpg", 'rb') #rb means read binary for image. Result will be text and numbers that doesn't make any sense
+for i in f:
+    print(i)
+------------------------------
+f=open("Resetting_PC.jpg", 'rb') #rb means read binary for image
+
+#Copy existing image file to other file below:
+f1=open("mypic.jpg", 'wb') #wb means write binary
+for data in f:
+    f1.write(data)
+------------------------------
+Comments: use #bla bla bla
+------------------------------
+IDLE Previous Command | Clear Screen?:
+------------------------------
+is Python Compiled or Interpreted Language? code to byte code to PVM(Python virtual machine=interpreter) to machine langiage
+both
+------------------------------
+Swap 2 Variables:
+a=2
+b=3
+a=a+b #primary where you can swap a with b value
+b=a-b #equation for b
+a=a-b #equation for a
+
+#or accomplished with below code
+a,b=b,a
+------------------------------
+Git | PyCharm | GitHub:
